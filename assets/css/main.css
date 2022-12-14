@@ -3675,3 +3675,10 @@ body.is-preload #header:after {
     padding: 0 1rem !important;
   }
 }
+
+@media screen and (max-width: 736px) {
+  .container img {
+    width: 75% !important;
+    margin: 0 auto;
+  }
+}

@@ -67,11 +67,13 @@
           <div class="col-6 col-12-medium">
             <ul class="major-icons">
               <li><span class="icon solid style1 major fa-code"></span></li>
-              <li><span class="icon solid style2 major fa-bolt"></span></li>
+              <li><span class="icon solid style2 major fa-laptop"></span></li>
               <li>
-                <span class="icon solid style3 major fa-camera-retro"></span>
+                <span class="icon solid style3 major fa-code-branch"></span>
               </li>
-              <li><span class="icon solid style4 major fa-cog"></span></li>
+              <li>
+                <span class="icon solid style4 major fa-mug-hot"></span>
+              </li>
               <!-- <li><span class="icon solid style5 major fa-desktop"></span></li>
               <li><span class="icon solid style6 major fa-calendar"></span></li> -->
             </ul>
@@ -164,7 +166,7 @@
           </div>
           <div class="col-4 col-12-medium">
             <span class="image fit"
-              ><a href="https://cuisinedining.netlify.app/" target="_blank">
+              ><a href="https://pizzas-builder.netlify.app/" target="_blank">
                 <img src="images/pizza-creations-screenshot.webp" alt="" /></a
             ></span>
             <h3>Pizzas Builder</h3>
@@ -175,7 +177,7 @@
             <ul class="actions special">
               <li>
                 <a
-                  href="https://cuisinedining.netlify.app/"
+                  href="https://pizzas-builder.netlify.app/"
                   target="_blank"
                   class="button"
                   >View</a
@@ -209,10 +211,27 @@
           <li>OR</li>
           <li>Send me a message below:</li>
         </ul>
-        <form action="POST" class="contact-form">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          class="contact-form"
+        >
           <div class="contact-inputs">
-            <input type="text" name="name" id="name" placeholder="Name" />
-            <input type="email" name="email" id="email" placeholder="Email" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
           </div>
           <textarea
             name="contact"
@@ -220,6 +239,7 @@
             cols="30"
             rows="10"
             placeholder="Message"
+            required
           ></textarea>
           <div class="form-btns">
             <input class="form-btn" type="submit" />
